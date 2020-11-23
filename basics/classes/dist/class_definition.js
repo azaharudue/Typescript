@@ -1,4 +1,3 @@
-"use strict";
 var Tree = /** @class */ (function () {
     function Tree(branch, leaf) {
         this.branch = branch;
