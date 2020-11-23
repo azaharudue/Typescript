@@ -26,3 +26,5 @@ class plant extends Tree{
 let plant1 = new plant("Branch2","Red leaf");
 plant1.moveLeaf();
 plant1.print();
+// From Abstract class no instances can be created, but from child class of abstract class can have instances
+
