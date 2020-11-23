@@ -1,5 +1,5 @@
 class Tree{ 
-    constructor(public branch: string, private leaf:string,protected name ?: string ){
+constructor(public branch: string, private leaf ?:string,protected name ?: string ){
     this.branch = branch;
     this.leaf = leaf;
     }
@@ -13,3 +13,16 @@ class Tree{
 let tree1 = new Tree("branch1", "green leaf");
 
 tree1.moveLeaf();
+
+class plant extends Tree{
+    print(){
+        
+        plant1.name = "NewPlant";
+        console.log(this.name+ " has "+this.branch );
+        
+    }
+
+}
+let plant1 = new plant("Branch2","Red leaf");
+plant1.moveLeaf();
+plant1.print();
