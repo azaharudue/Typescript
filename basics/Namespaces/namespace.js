@@ -2,9 +2,10 @@ var myNameSpace;
 (function (myNameSpace) {
     myNameSpace.name = "Azahar Hossain";
     function print() {
-        return myNameSpace.name;
+        return myNameSpace.name + " is my name";
     }
     myNameSpace.print = print;
 })(myNameSpace || (myNameSpace = {}));
 ///<reference path = "../Namespaces/module1.ts"/>
-console.log(myNameSpace.name);
+var thisSpacePrint = myNameSpace.print;
+console.log(thisSpacePrint());
